@@ -7,14 +7,20 @@
 
 import UIKit
 
-class PokerViewController: UIViewController {
+final class PokerViewController: UIViewController {
+
+    
+    //MARK: - UI Components
+    
+    //MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
     }
 
+    
 
 }
 

@@ -36,8 +36,17 @@ final class TabBarController: UITabBarController {
     }
     
     private func setNavigationController() {
-        homeNVC.setNavigationBarHidden(true, animated: true)
-        pokerNVC.setNavigationBarHidden(true, animated: true)
+        homeVC.title = "홈"
+        pokerVC.title = "포커"
+        
+        homeNVC.navigationBar.prefersLargeTitles = true
+        pokerNVC.navigationBar.prefersLargeTitles = true
+        
+        let appearance = UINavigationBarAppearance()
+        homeNVC.navigationBar.standardAppearance = appearance
+        homeNVC.navigationBar.scrollEdgeAppearance = appearance
+        pokerNVC.navigationBar.standardAppearance = appearance
+        pokerNVC.navigationBar.scrollEdgeAppearance = appearance
     }
     
     private func setTabViewController(){
@@ -53,7 +62,6 @@ final class TabBarController: UITabBarController {
         viewControllers = [homeNVC, pokerNVC]
     }
 }
-
 
 
 

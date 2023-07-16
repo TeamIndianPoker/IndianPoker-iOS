@@ -20,6 +20,8 @@
 		87DC47E22A5CACDE007823CB /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 87DC47E12A5CACDE007823CB /* RxRelay */; };
 		87DC47E42A5CACDE007823CB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87DC47E32A5CACDE007823CB /* RxSwift */; };
 		87DC47E72A6425CE007823CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC47E62A6425CD007823CB /* TabBarController.swift */; };
+		87DC47EB2A642925007823CB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC47EA2A642925007823CB /* HomeViewModel.swift */; };
+		87DC47ED2A64292C007823CB /* PokerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC47EC2A64292C007823CB /* PokerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		87DC47B92A5C7833007823CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DC47C92A5CA691007823CB /* PokerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerViewController.swift; sourceTree = "<group>"; };
 		87DC47E62A6425CD007823CB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		87DC47EA2A642925007823CB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		87DC47EC2A64292C007823CB /* PokerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		87DC47C32A5CA458007823CB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				87DC47EE2A642936007823CB /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				87DC47AF2A5C7830007823CB /* HomeViewController.swift */,
+				87DC47EA2A642925007823CB /* HomeViewModel.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				87DC47C92A5CA691007823CB /* PokerViewController.swift */,
+				87DC47EC2A64292C007823CB /* PokerViewModel.swift */,
 			);
 			path = PokerScene;
 			sourceTree = "<group>";
@@ -136,6 +143,13 @@
 				87DC47E62A6425CD007823CB /* TabBarController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		87DC47EE2A642936007823CB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87DC47CA2A5CA691007823CB /* PokerViewController.swift in Sources */,
+				87DC47EB2A642925007823CB /* HomeViewModel.swift in Sources */,
 				87DC47B02A5C7830007823CB /* HomeViewController.swift in Sources */,
+				87DC47ED2A64292C007823CB /* PokerViewModel.swift in Sources */,
 				87DC47AC2A5C7830007823CB /* AppDelegate.swift in Sources */,
 				87DC47E72A6425CE007823CB /* TabBarController.swift in Sources */,
 				87DC47AE2A5C7830007823CB /* SceneDelegate.swift in Sources */,
